@@ -595,10 +595,11 @@ footer hr {
     .destination-text p {
         margin-bottom: 1rem;
     }
+
     .destination-image-card {
-        height:18.75rem;
+        height: 18.75rem;
     }
-    
+
     .destination-images {
         display: grid;
         gap: 1rem;
@@ -613,49 +614,88 @@ footer hr {
             "bd bd bd bd bd bd bd bd bd bd bd bd"
             "bb bb bb bb bb bb bb bb bb bb bb bb";
     }
-    
+
+    .destination-image-card h5 {
+        font-size: 1.25rem;
+    }
 
     #destination-img-1 {
         background-image: url("Images/maldives\ 2.png");
         background-repeat: no-repeat;
         grid-area: ma;
     }
-    
+
     #destination-img-2 {
         background-image: url("Images/indonesia\ 2.png");
         background-repeat: no-repeat;
         grid-area: in;
     }
-    
+
     #destination-img-3 {
         background-image: url("Images/srilanka\ 2.png");
         background-repeat: no-repeat;
         grid-area: sr;
     }
-    
+
     #destination-img-4 {
         background-image: url("Images/north-america\ 2.png");
         background-repeat: no-repeat;
         grid-area: na;
     }
-    
+
     #destination-img-5 {
         background-image: url("Images/kashmir\ 2.png");
         background-repeat: no-repeat;
         grid-area: ka;
     }
-    
+
     #destination-img-6 {
         background-image: url("Images/bangladesh\ 2.png");
         background-repeat: no-repeat;
         grid-area: bd;
     }
-    
+
     #destination-img-7 {
         background-image: url("Images/bandarban\ 2.png");
         background-repeat: no-repeat;
         grid-area: bb;
     }
-    
-    
+
+    /* Why us section */
+    .why-us-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .why-us-text-container {
+        margin-bottom: 1rem;
+    }
+
+    .why-us-text {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .why-us-text h3 {
+        margin-bottom: 1rem;
+    }
+
+    .why-us-card-container {
+        gap: 1rem;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "m m m m m m m m m m m m"
+            "p p p p p p p p p p p p";
+    }
+
+    .why-us-card {
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    .why-us-card h5 {
+        font-size: 1.25rem;
+        margin: 1rem 0;
+    }
+
 }
