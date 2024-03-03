@@ -45,6 +45,7 @@ header {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -79,6 +80,9 @@ header {
 .nav ul li:first-child a {
     color: #FF5400;
     font-weight: 700;
+}
+.hamburger-menu{
+    display: none;
 }
 
 /* Banner */
@@ -461,4 +465,19 @@ footer hr{
 .copyright{
     margin-top: 3rem;
     margin-bottom: 6.25rem;
+}
+
+
+/* Mobile responsive */
+@media screen and (max-width:600px) {
+    /* Navbar */
+    .nav ul{
+        display: none;
+    }
+    .hamburger-menu{
+        display: unset;
+    }
+    .nav h3{
+        font-size: 1.5rem;
+    }
 }
