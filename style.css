@@ -166,7 +166,6 @@ main {
 
 .popular-tour {
     display: flex;
-    align-items: center;
     gap: 3.25rem;
     align-items: center;
 }
@@ -510,9 +509,10 @@ footer hr {
     }
 
     /* Banner */
-    .banner-container{
+    .banner-container {
         /* padding: 1.5rem; */
     }
+
     .banner {
         /* border: 1px solid green; */
         /* width: 100%; */
@@ -545,7 +545,9 @@ footer hr {
         gap: 1rem;
     }
 
-    .search-button, select, input {
+    .search-button,
+    select,
+    input {
         width: unset;
         /* border: 1px solid red; */
     }
@@ -553,5 +555,25 @@ footer hr {
 
     select {
         border-right: 1rem solid #fff;
+    }
+
+    /* Main */
+    main {
+        padding: 1.25rem;
+        margin: 0 auto;
+    }
+
+    /* Popular tour */
+    .popular-tour-container {
+        margin: 1.5rem 0;
+    }
+
+    .popular-tour {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .popular-tour img{
+        width: 100%;
     }
 }
