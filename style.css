@@ -131,16 +131,19 @@ header {
 }
 
 .search-button,
-select,
-input {
+.search-area select,
+.search-area input {
     /* width: 10.875rem; */
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     border-radius: 0.5rem;
     border: none;
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
+}
+.search-area input::placeholder, .search-area select{
+    padding-left: 1rem;
 }
 
 .search-button {
@@ -148,7 +151,7 @@ input {
     font-weight: 700;
 }
 
-select {
+.search-area select {
     border-right: 1rem solid #fff;
 }
 
@@ -363,7 +366,7 @@ main {
 }
 
 .newsletter-text p {
-    max-width: 350px;
+    /* max-width: 350px; */
     margin-bottom: 3rem;
 }
 
@@ -372,20 +375,36 @@ main {
     margin: 1.5rem 0;
 }
 
-.input-form{
-    width: 100%;
+.input-form {
+    /* max-width: 100%; */
+    /* max-width: 393px; */
+    /* border: 1px solid red; */
 }
 
 .input-form input {
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
-    /* display: block; */
-    width: 393px;
-    /* width: 100%; */
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    /* padding-left: 20px; */
+    /* padding: 1rem 0 1rem 1.25rem; */
+    border: 0;
+}
+
+.input-form input::placeholder {
+    padding-left: 1.25rem;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .input-form input[type=text] {
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+.input-form input[type=email]{
+    margin-bottom: 1.5rem;
 }
 
 .btn-sub {
@@ -732,18 +751,16 @@ footer hr {
         margin: 1rem 0;
     }
 
-    .input-form {
-        border: 2px solid hotpink;
+    .input-form input {
         width: 100%;
-    }
-
-    .input-form input{
-        max-width: 100%;
-        border: 3px solid green;
     }
 
     .input-form input[type=text] {
         margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .input-form input[type=email]{
+        margin-bottom: 1.25rem;
     }
 
     .btn-sub {
