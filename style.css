@@ -573,7 +573,89 @@ footer hr {
         gap: 1.5rem;
     }
 
-    .popular-tour img{
+    .popular-tour img {
         width: 100%;
     }
+
+    /* Destination */
+    .destination-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .destination-text {
+        /* text-align: center; */
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .destination-text h3 {
+        margin-bottom: 1rem;
+    }
+
+    .destination-text p {
+        margin-bottom: 1rem;
+    }
+    .destination-image-card {
+        height:18.75rem;
+    }
+    
+    .destination-images {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+            "ma ma ma ma ma ma ma ma ma ma ma ma"
+            "in in in in in in in in in in in in"
+            "sr sr sr sr sr sr sr sr sr sr sr sr"
+            "na na na na na na na na na na na na"
+            "ka ka ka ka ka ka ka ka ka ka ka ka"
+            "bd bd bd bd bd bd bd bd bd bd bd bd"
+            "bb bb bb bb bb bb bb bb bb bb bb bb";
+    }
+    
+
+    #destination-img-1 {
+        background-image: url("Images/maldives\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: ma;
+    }
+    
+    #destination-img-2 {
+        background-image: url("Images/indonesia\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: in;
+    }
+    
+    #destination-img-3 {
+        background-image: url("Images/srilanka\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: sr;
+    }
+    
+    #destination-img-4 {
+        background-image: url("Images/north-america\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: na;
+    }
+    
+    #destination-img-5 {
+        background-image: url("Images/kashmir\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: ka;
+    }
+    
+    #destination-img-6 {
+        background-image: url("Images/bangladesh\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: bd;
+    }
+    
+    #destination-img-7 {
+        background-image: url("Images/bandarban\ 2.png");
+        background-repeat: no-repeat;
+        grid-area: bb;
+    }
+    
+    
 }
