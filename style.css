@@ -311,7 +311,7 @@ main {
 }
 
 .subtitles {
-    color: #131318;
+    color: rgba(19, 19, 24, 0.70);
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5rem;
