@@ -143,7 +143,7 @@ header {
     font-weight: 400;
 }
 .search-area input::placeholder, .search-area select{
-    padding-left: 1rem;
+    padding-left: 1.25rem;
 }
 
 .search-button {
@@ -210,9 +210,6 @@ main {
     margin-bottom: 3rem;
 }
 
-.destination-image-card {
-    height: 18.75rem;
-}
 
 .destination-images {
     display: grid;
@@ -230,7 +227,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-size: contain;
+    background-size: cover;
+    height: 18.75rem;
 }
 
 .destination-image-card h5 {
